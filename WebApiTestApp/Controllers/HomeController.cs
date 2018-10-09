@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Configuration;
 using System.Web.Mvc;
 
 namespace WebApiTestApp.Controllers
@@ -10,9 +7,8 @@ namespace WebApiTestApp.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
-            return View();
+            string greeting = ConfigurationManager.AppSettings["Greeting"];
+            return Content(greeting);
         }
     }
 }

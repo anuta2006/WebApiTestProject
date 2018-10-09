@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace WebApiTestApp.Models
 {
+
+    [Table("Product", Schema = "Production")]
     public class Product
     {
         public int ProductId { get; set; }

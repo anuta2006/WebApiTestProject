@@ -1,0 +1,6 @@
+INFO  2018-10-09 20:51:32,361  9132ms ProductsController     GetProducts        - ProductsController: GetProducts
+INFO  2018-10-09 20:51:35,983 12754ms ProductsController     GetProducts        - ProductsController: GetProducts
+INFO  2018-10-09 20:55:29,721  7609ms ProductsController     GetProducts        - Request received
+INFO  2018-10-09 20:55:37,680 15568ms ProductsController     GetProduct         - Product not found!
+INFO  2018-10-09 20:57:34,190  7361ms ProductsController     GetProducts        - Request received
+INFO  2018-10-09 20:58:06,570 39741ms ProductsController     GetProduct         - Product not found!

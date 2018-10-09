@@ -10,6 +10,12 @@ namespace WebApiTestApp.Models
     {
         public ProductContext() : base("AdventureWorks") { }
 
-        public IDbSet<Product> Products { get; set; }
+        public virtual IDbSet<Product> Products { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<ProductContext>(null);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
