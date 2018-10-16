@@ -8,7 +8,8 @@ namespace WebApiTestApp.Controllers
         public ActionResult Index()
         {
             string greeting = ConfigurationManager.AppSettings["Greeting"];
-            return Content(greeting);
+            string ciGreating = " Now with CI!";
+            return Content(greeting + ciGreating);
         }
     }
 }
