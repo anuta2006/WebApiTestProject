@@ -5,3 +5,4 @@ INFO  2018-10-09 20:55:37,680 15568ms ProductsController     GetProduct         
 INFO  2018-10-09 20:57:34,190  7361ms ProductsController     GetProducts        - Request received
 INFO  2018-10-09 20:58:06,570 39741ms ProductsController     GetProduct         - Product not found!
 INFO  2018-10-09 21:38:26,188  6831ms ProductsController     GetProducts        - Request received
+INFO  2018-10-28 11:31:54,619   325ms HomeController         Index              - Request received
