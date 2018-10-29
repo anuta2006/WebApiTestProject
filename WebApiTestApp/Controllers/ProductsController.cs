@@ -46,6 +46,8 @@ namespace WebApiTestApp.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult PutProduct(int id, Product product)
         {
+            _logger.Info("PUR request received");
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -83,6 +85,8 @@ namespace WebApiTestApp.Controllers
         [ResponseType(typeof(Product))]
         public IHttpActionResult PostProduct(Product product)
         {
+            _logger.Info("POST request received");
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -98,6 +102,8 @@ namespace WebApiTestApp.Controllers
         [ResponseType(typeof(Product))]
         public IHttpActionResult DeleteProduct(int id)
         {
+            _logger.Info("DELETE request received");
+
             Product product = _db.Products.Find(id);
             if (product == null)
             {
