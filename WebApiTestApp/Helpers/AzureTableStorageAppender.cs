@@ -1,12 +1,10 @@
 ﻿using log4net.Appender;
 using log4net.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Table;
+using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.ServiceRuntime;
+using Microsoft.WindowsAzure.StorageClient;
 using System;
-using System.Collections.Generic;
 using System.Data.Services.Client;
-using System.Linq;
-using System.Web;
 using WebApiTestApp.Models;
 
 namespace WebApiTestApp.Helpers
@@ -44,7 +42,7 @@ namespace WebApiTestApp.Helpers
                         Identity = loggingEvent.Identity
                     });
                 }
-                catch (DataServiceRequestException e)
+                catch (DataServiceClientException e)
                 {
                     ErrorHandler.Error(string.Format("{0}: Could not write log entry to {1}: {2}",
                         GetType().AssemblyQualifiedName, _tableEndpoint, e.Message));

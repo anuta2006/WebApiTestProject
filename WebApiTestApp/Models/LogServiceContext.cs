@@ -1,10 +1,7 @@
-﻿
-using Microsoft.WindowsAzure.Storage.Auth;
-using Microsoft.WindowsAzure.Storage.Table.DataServices;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.StorageClient;
+using System.Data.Services.Client;
 using System.Linq;
-using System.Web;
 
 namespace WebApiTestApp.Models
 {
