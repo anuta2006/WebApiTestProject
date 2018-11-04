@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Upload an document</h2>
+
+@using (Html.BeginForm("Upload", "Document", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="document" /><br>
+    <hr />
+    <input class="btn btn-primary" type="submit" value="Upload!" />
+}
+
+
