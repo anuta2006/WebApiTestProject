@@ -45,6 +45,7 @@ namespace WebApiTestApp.Services
             // Q: get by name, id?
             // Q: table - aggregation functions
             // Q: private ququq?
+            // Q: pricings
 
             var msgReceived = await queue.GetMessageAsync().ConfigureAwait(false);
 
